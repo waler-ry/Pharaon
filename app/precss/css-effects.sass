@@ -1,0 +1,61 @@
+.order-card
+	&:nth-child(1)
+		.img
+			&:hover
+				animation-name: scale
+				animation-duration: .8s
+				animation-timing-function: ease-out
+				animation-iteration-count: infinite
+				@keyframes scale
+					0%
+						transform: scale(1)
+					100%
+						transform: scale(1.1)
+	&:nth-child(3)
+		.img
+			&:hover
+				animation: lift .5s cubic-bezier(1.000, 0, 1, 1) .6s 1
+				@keyframes lift
+					0%
+						top: -115px
+					100%
+						top: 0
+	&:nth-child(5)
+		.img
+			&:hover
+				animation: delivery 2s cubic-bezier(1, -1.63, 1, 1.6) 0.6s 1, delivery-opacity 2s ease-in 2.5s 1
+				@keyframes delivery
+					0%
+						left: 7px
+					100%
+						left: 157px
+
+				@keyframes delivery-opacity
+					0%
+						opacity: 0
+					100%
+						opacity: 1
+
+.enter-button
+	transform: scale(1)
+	transition: .4s
+	&:hover
+		transform: scale(1.1)
+		transition: .3s
+
+.service-block-button
+	transform: scale(1)
+	transition: .4s
+	&:hover
+		transform: scale(1.1)		
+		transition: .3s
+
+.bg-button
+	img
+		animation: enter 1s linear infinite
+ 
+		@keyframes enter
+			0%
+				opacity: 0
+			100%
+				opacity: 1

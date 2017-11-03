@@ -1,0 +1,47 @@
+//- offer&price
+mixin offer-caption-block(caption)
+		.offer-caption-block
+			.offer-caption 
+				| #{caption}
+			.offer-arrows
+				a(href="")
+					.prev
+				.shape
+				a(href="")
+					.next
+
+mixin offer(btnName, color)
+		.offer-card
+			.offer-card-image-block
+				.button(class="#{color}") #{btnName}
+				//- img(src="img/photo1.png" alt="#{btnName}")
+				
+			.offer-card-text-block
+				.nametext Кухня из массива ЗЛАТА
+				.pricetext От 500 BYN
+
+mixin enter-button-block
+	.enter-button-block
+		a(href="")
+			.enter-button 
+				| Смотреть все
+				img(src="img/button-enter.png", alt="enter")
+
+
+.offer-container
+	+offer-caption-block("Хит продаж")
+	.offer-cards-block
+		-for(var i=0; i<3; i++)
+			+offer(
+			"Новинка", "yellow")
+	+enter-button-block
+
+.offer-container.hot
+	+offer-caption-block("Горячие предложения")
+	.offer-cards-block
+		-for(var i=0; i<3; i++) 
+			+offer("Скидка", "green")
+	+enter-button-block
+
+
+

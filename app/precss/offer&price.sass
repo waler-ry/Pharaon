@@ -1,0 +1,168 @@
+// offer&price
+
+.offer-container	
+	margin: 86px auto 0
+	max-width: 1140px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	@media only screen and (max-width: 1200px)
+		padding: 0 25px
+
+.hot
+	.offer-caption-block
+		margin: 0px 0 48px 0
+		.offer-arrows
+			position: relative
+			bottom: 2px
+	.offer-caption
+		padding-bottom: 5px
+		margin-left: -1px
+		padding-top: 1px
+	.offer-card-image-block
+		margin-bottom: 2px
+	.enter-button
+		line-height: 2
+		img
+			top: 1px
+		&-block
+			height: 38px
+	.nametext
+		margin-bottom: 7px
+	.offer-card-text-block
+		margin-bottom: 2px
+
+
+.offer-caption-block
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	border-bottom: 1px solid gray
+	margin: 0px 0px 51px 2px
+	padding-bottom: 3px
+	.offer-caption
+		text-align: left
+		width: 70%
+	.offer-arrows
+		height: auto
+		display: flex
+		justify-content: space-between
+		margin-bottom: 8px
+.prev
+	background: url(img/prev2.png) no-repeat
+	width: 41px
+	height: 35px
+	position: relative
+
+.shape
+	background: url(img/shape.png) no-repeat
+	width: 18px
+	height: 18px
+	height: 26px
+	position: relative
+	top: 6px
+
+.next
+	background: url(img/next2.png) no-repeat
+	width: 35px
+	height: 35px
+	position: relative
+
+
+.offer-cards-block
+	max-width: 100%
+	display: flex
+	justify-content: space-between
+	margin-bottom: 16px
+	@media only screen and (max-width: 800px)
+		flex-direction: column
+		margin: 0 auto
+
+.offer-card
+	width: 384px
+	max-width: 100%
+	min-height: 327px
+	margin: 0px 10px
+	&:nth-child(3)
+		margin-right: -10px
+	&:nth-child(1)
+		margin-left: 0
+	@media only screen and (max-width: 960px)
+		height: 0
+	@media only screen and (max-width: 800px)
+		margin-bottom: 22px
+
+
+.offer-card-image-block
+	height: 284px
+	position: relative
+	@media only screen and (max-width: 800px)
+		min-height: 278px
+	@media only screen and (max-width: 960px)
+		height: 220px
+	.button
+		position: absolute
+		top: -9px
+		left: -13px
+		width: 129px
+		height: 33px
+		z-index: 1
+		text-align: center
+		line-height: 1.8
+		&:before
+			position: relative
+			top: 32px
+	.yellow
+		background-color: #efe90f
+		color: black
+		&:before
+			content: url("img/yellow-corner.png")
+			display: block
+			position: absolute
+	.green
+		background-color: #0f8449
+		color: white
+		&:before
+			content: url("img/green-corner.png")
+			display: block
+			position: absolute
+
+.offer-card-image-block
+	max-width: 361px
+	background: url(img/photo1.png) no-repeat
+	background-size: 100%
+	transform: scale(1)
+	transition: .4s
+
+.offer-card-text-block
+	padding: 0
+
+.nametext, .pricetext
+	width: 100%
+	text-align: left
+	padding-left: 1px
+.nametext
+	margin-bottom: 7px
+.enter-button-block
+	height: 39px
+	width: 100%	
+	@media only screen and (max-width: 800px)
+		display: flex
+		justify-content: center
+		padding: 22px
+.enter-button
+	text-align: center
+	float: right
+	width: 208px
+	height: 36px
+	border: 1px solid #0f8449
+	letter-spacing: -0.3
+	word-spacing: 1px
+	transform: scale(1)
+	transition: .4s
+	img
+		width: 16px
+		height: 14px
+		position: relative
+		left: 4px
+		margin-left: 8px

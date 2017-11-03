@@ -1,0 +1,62 @@
+header
+	.header-top
+		.header-soc
+			mixin header-soc-icons(name, text)
+				a(href="")
+					img(src="img/#{name}.png" width= "20px" height= "20px" alt="#{name}")
+				a(href="")
+					.header-icon-text #{text}
+
+			.header-soc-icon
+				+header-soc-icons("insta", "Подпишись на наш Инстаграм")
+			.header-soc-icon
+				+header-soc-icons("vk", "Зайди на нашу страницу Вконтакте") 
+			.header-soc-icon
+				+header-soc-icons("fb", "Посети нашу страницу на Фейсбук") 
+			.header-soc-icon
+				+header-soc-icons("yt", "Смотри нас на YouTube")
+	.header-bottom
+		.main
+			.logo-container
+				a(href="")
+					img(src="img/Pharaon.png" width="90px" height="120px" alt="logo" class="logo")
+			.main-info
+				.info-items.description 
+					span Кухни на заказ
+					br
+					| недорого от  производителя
+				.info-items.service-block
+					mixin service-image(name, text)
+							.image-container
+								a(href="")
+									img(src="img/#{name}.png" alt="#{name}" class="#{name}") 
+							br
+							a(href="")
+								.service-text-part #{text}
+					
+					
+					.service
+						+service-image("call", "Заказать звонок")
+					
+					.service
+						+service-image("size", "Заказать замер")
+				
+					.service
+						+service-image("calc", "Рассчитать кухню")
+				.info-items.open
+					|Работаем с 9:00 до 21:00  без выходных
+				.info-items.phones
+						.phone1 +375 (29) 388-90-00
+						.phone2 +375 (33) 388-90-00
+			.main-menu
+				.main-menu-container
+					a(href="").menu-items.company О компании
+					a(href="").menu-items.catalog Каталог мебели
+					a(href="").menu-items.sale Акции
+					a(href="").menu-items.clients Покупателям
+					a(href="").menu-items.recomandation Отзывы
+					a(href="").menu-items.news Новости
+					a(href="").menu-items.contacts Контакты
+					i.fa.fa-bars(aria-hidden='true')
+		.grayline
+

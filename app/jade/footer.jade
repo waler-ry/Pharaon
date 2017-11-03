@@ -1,0 +1,53 @@
+mixin ul(name)
+	div(class="ul-caption") #{name}
+footer
+	.footer-container
+		.left-block
+			.footer-contacts
+				.footer-caption Мебельная компания "Фараон"
+				ul
+					- var names = ["+375 (29) 388-90-00","+375 (33) 388-90-00", "09:00 - 21:00 без выходных"];
+						for name in names
+							li= name
+				img(src="" width="80px" height="32x" alt="")
+			.copyright 
+				| © 2014–2016  
+				br 
+				| Мебельная компания "Фараон"
+		.right-block
+			.style
+				+ul("Стиль") 
+				ul
+					- var names = ["Классические кухни", "Кухни модерн"];
+					for name in names
+						li= name
+			.form
+				+ul("Форма") 
+				ul
+					- var names = ["Малогабаритные кухни", "П-образные кухни", "Угловые кухни", "Прямые кухни", "Маленькие угловые кухни"];
+						for name in names
+							li= name
+			.material
+				+ul("Материал") 
+				ul
+					- var names = ["Кухни из пластика", "Кухни из МДФ-пленки", "Кухни из МДФ-рамка", "Кухни из массива дерева", "Кухни глянец ALVIC"];
+						for name in names
+							li= name
+			.color
+				+ul("Цвет") 
+				ul
+					- var names = ["Светлые кухни", "Темные кухни", "Древесные кухни", "Красные кухни", "Оранжевые кухни", "Желтые кухни", "Зеленые кухни", "Синие кухни", "Мультицвет"];
+						for name in names
+							li= name
+			.shops
+					+ul("Наши магазины:") 
+					ul
+						- var names = ["ул.Алибегова 13 к.1", "10:00 - 20:00 без выходных"];
+							for name in names
+								li= name
+			.menu
+				ul
+					- var names = ["О компании", "Каталог мебели", "Акции", "Покупателям", "Отзывы", "Новости", "Контакты"];
+							for name in names
+								a(href="")
+									li= name

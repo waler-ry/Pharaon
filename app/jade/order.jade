@@ -1,0 +1,22 @@
+//- order&price
+
+mixin order(numer, img, text)
+		.order-card
+			img(src="img/#{numer}.png" alt="#{numer}" class="num #{img}")
+			.main-block
+				.order-card-image-block
+					.container-card
+							img(src="img/#{img}.png" alt="#{img}" class="img")
+						.order-card-text-block
+							div(class="text-#{img}") #{text}
+
+.order-container
+	.order-caption-block
+		.order-caption 
+			| Как заказать мебель
+	.order-cards-block
+		+order("1", "step-call", 'Вы звоните нам, спеиалист подробно консультирует Вас по всем возникшим вопросам и ориентирует по стоимости заказа')
+		+order("2", "step-gauger", 'Если предложение Вас устраивает, необходим приезд замерщика на дом для составления подробного проекта кухни')
+		+order("3", "step-cost", 'На следующий день после приезда к Вам замерщика Вы получаете подробную информацию по Вашей кухне с точной стоимостью заказа')
+		+order("4", "step-mail", 'Если предложение Вас устраивает, оформляется заказ без предоплаты, нужно только прислать подтверждение на почту')
+		+order("5", "step-delivery", "Согласовываем дату и время доставки кухни (всегда по выходны дням), а также день установки (любой удобный для Вас день)")

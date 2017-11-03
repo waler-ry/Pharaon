@@ -1,0 +1,14 @@
+//- service-cards-part
+mixin service-card(name, text1, text2)
+	.card
+		img(src="img/#{name}.png" width="142px" height="142px" alt="#{name}")
+		.card-text-block
+			h4 #{text1}
+			span #{text2}
+
+.service-card-container
+	.service-card-block
+		+service-card("gauger", "ЗАМЕРЩИК", "Бесплатный выезд и эскиз")
+		+service-card("full", "ПОД КЛЮЧ", "Кухню собирают собственные сборщики без переплат")
+		+service-card("free", "БЕСПЛАТНО", "Доставка и занос по Минску")
+		+service-card("days", "ОТ 7 ДНЕЙ", "Изготовим и доставим Вашу кухню")

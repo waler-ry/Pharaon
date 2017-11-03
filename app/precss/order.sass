@@ -1,0 +1,107 @@
+.order-container
+	max-width: 1140px
+	margin: 0 auto
+	padding-top: 65px
+	@media only screen and (max-width: 1006px)
+		padding: 0 15px
+
+.order-caption-block
+	border-bottom: 1px solid black
+	padding-bottom: 9px
+	margin-bottom: 17px
+
+.order-caption
+	@media only screen and (max-width: 1006px)
+		padding: 0 15px
+.order-cards-block
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	@media only screen and (max-width: 946px)
+		flex-direction: column
+		padding: 0 25px
+
+.order-card
+	text-align: left
+	width: 221px
+	min-height: 293px
+	margin: 0 4px
+	display: flex
+	align-self: stretch
+	position: relative
+	@media only screen and (max-width: 946px)
+		flex-direction: row
+		padding: 1px 20px
+		width: 100%
+		min-height: 50px
+		margin: 0
+		padding: 0
+	&:nth-child(1)
+		margin-left: -2px
+		.container-card
+			img
+				
+	&:nth-child(5)
+		margin-right: -2px
+	&:nth-child(4)
+		.img
+			left: -2px
+	&:nth-child(5)
+		img
+			left: 7px
+			
+
+.container-card
+	@media only screen and (max-width: 946px)
+		padding-left: 20px
+		width: 201px
+	display: flex
+	align-items: flex-end
+	justify-content: center
+	height: 138px
+	margin-bottom: -4px
+	overflow: hidden
+
+
+.main-block
+	margin-top: 8px
+	background-color: #f2f2f2
+	min-height: 289px
+	@media only screen and (max-width: 946px)
+		min-height: 50px
+.num
+	padding-left: 17px
+	position: absolute
+.img
+	margin: 32px auto
+	display: block
+	position: relative
+	left: 4px
+
+
+.order-card-image-block	
+	display: flex
+	flex-direction: column
+	@media only screen and (max-width: 946px)
+		flex-direction: row
+
+.order-card-text-block
+	@media only screen and (max-width: 946px)
+		padding: 23px
+		align-items: center
+		display: flex
+.text-step-call
+	padding: 0 6px 0 12px
+	text-align: justify
+.text-step-gauger
+	padding: 0 15px 0 21px
+	text-align: justify
+.text-step-cost
+	padding: 0 16px 0 20px
+	text-align: justify
+.text-step-mail
+	padding: 0 12px 0 14px
+	text-align: justify
+.text-step-delivery
+	padding: 0 14px 0 15px
+	text-align: justify

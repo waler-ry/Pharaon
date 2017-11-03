@@ -1,0 +1,207 @@
+*
+	margin: 0
+	padding: 0
+	text-decoration: none
+	list-style: none
+
+html:before 
+	content: url('screenshot-cut.png')
+	opacity: .5
+	position: absolute
+	left: 107px
+
+html
+	max-width: 100%
+
+header
+	border-bottom: 3px solid #228e57
+	@media only screen and (max-width: 946px)
+		padding: 10px
+		background-color: #f3f2f2
+
+section
+	max-width: 1140px
+	margin: 0 auto
+.header-top
+	min-width: 100%
+	background-color: #d5d5d5
+	@media only screen and (max-width: 946px)
+		display: flex
+		justify-content: flex-end
+
+.header-bottom
+	display: flex
+	flex-direction: column
+	min-width: 100%
+	position: relative
+
+.logo-container
+	float: left
+
+
+	// float: left
+	// margin-right: 15px
+
+.main
+	width: 1140px
+	margin: 0 auto
+	z-index: 2
+	max-width: 100%
+	@media only screen and (max-width: 946px)
+		display: flex
+		justify-content: space-between
+		padding-right: 15px
+		align-items: center
+
+.main-info, .main-menu, .header-soc
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+.info-items	
+	@media only screen and (max-width: 946px)
+		display: none
+
+.main-info	
+	margin-top: 8px
+	margin-left: 14px
+	margin-bottom: 9px
+	margin-left: 105px
+	@media only screen and (max-width: 946px)
+		display: flex
+		justify-content: flex-start
+		width: 100%
+		align-items: center
+
+.contacts
+	text-align: right
+
+.main-menu	
+	padding-top: 3px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-left: 30px
+	height: 36px
+	@media only screen and (max-width: 946px)
+		display: flex
+	&-container
+		width: 100%
+		display: flex
+		justify-content: space-between
+.grayline
+	height: 40px
+	position: absolute
+	background-color: gray
+	bottom: 0
+	background-color: #f3f2f2
+	width: 100%
+	z-index: 1
+
+.menu-items
+	padding: 2px 0px
+	padding-right: 35px
+	border-right: 1px solid black
+	height: 21px
+	display: flex
+	align-items: center
+	@media only screen and (max-width: 946px)
+		display: none
+	&:nth-child(1)
+		padding-left: 1px
+		min-width: 94px
+	&:nth-child(2)
+		margin-left: -1px
+		width: 130px
+	&:nth-child(3)
+		margin-left: -6px
+		width: 52px
+		padding-left: 8px
+	&:nth-child(4)
+		margin-left: -1px
+		width: 108px
+		padding-left: -3px
+	&:nth-child(5)
+		margin-left: -2px
+		min-width: 50px
+	&:nth-child(6)
+		padding-right: 8px
+		width: 96px
+		margin-left: -3px
+	&:nth-child(7)
+		padding-right: 0
+		margin-right: -1px
+		border-right: none
+
+.description
+	width: 15.6%
+	@media only screen and (max-width: 946px)
+		display: none
+
+.header-soc	
+	padding-top: 6px
+	padding-bottom: 7px
+	max-width: 1140px
+	margin: 0 auto
+	@media only screen and (max-width: 946px)
+		position: absolute
+	
+.header-soc-icon
+	&:nth-child(1)
+		margin-right: 25px
+		@media only screen and (max-width: 946px)
+			margin: 0
+	display: flex
+	align-items: center	
+	img
+		margin-right: 11px
+
+.header-icon-text
+	@media only screen and (max-width: 946px)
+		display: none
+
+.service-block
+	display: flex
+	align-items: stretch
+	width: 36.5%
+	justify-content: space-between
+	@media only screen and (max-width: 946px)
+		display: none
+
+.service
+	display: inline-block
+
+.image-container
+	height: 24px
+	display: flex
+	align-items: center
+	justify-content: center
+
+.call
+	width: 28px
+	height: 28px
+
+.size
+	width: 37px
+	height: 32px
+	padding-left: 7px
+	padding-bottom: 3px
+
+.calc
+	width: 27px
+	height: 35px
+	padding-bottom: 5px
+
+
+.open
+	width: 175px
+	letter-spacing: 0px
+	padding-bottom: 2px
+	@media only screen and (max-width: 946px)
+		display: none
+
+.phones	
+	padding-top: 2px
+	margin-left: 12px
+	ul
+		list-style-position: inside

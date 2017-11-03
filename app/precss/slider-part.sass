@@ -1,0 +1,93 @@
+// slider-part
+.slide-container
+	align-items: center
+	max-width: 100%
+	min-height: 524px
+	justify-content: space-around
+	&-block
+		display: flex
+		align-items: center
+		a
+			width: 35px
+			height: 47px
+	display: flex
+
+.theme-container
+	height: 366px
+	width: 1140px
+	margin: auto 0
+
+.text-container-block
+	margin: auto 0
+
+.text-block
+	margin: 0 auto
+	text-align: left
+	width: 90.5%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	margin-bottom: 8px
+	padding-bottom: 1px
+h1
+	padding-bottom: 12px	
+
+.caption
+	max-width: 813px
+	height: 126px
+	background-color: #ffffff
+	opacity: 0.8
+	margin-bottom: 9px
+
+.bg-button
+	width: 246px
+	height: 43px
+	background-color: #efe90f
+	opacity: 0.8
+	text-align: center
+	img		
+		position: relative
+		top: 1px
+		left: 5px
+		padding-left: 8px
+
+
+.slide-container
+	background: url("img/background.png") no-repeat 49.4% 0
+	background-size: auto
+
+.sliders
+	display: block
+	width: 100%
+
+.arrows
+	position: absolute
+	width: 100%
+	display: flex
+	justify-content: space-between
+
+.slide-left
+	position: relative
+	animation: slide-left 1s linear 1
+
+	@keyframes slide-right
+		0%
+			left: -1140px
+		100%
+			left: 0px
+
+	@keyframes slide-left
+		0%
+			left: -1140px
+		100%
+			left: 0px
+
+
+.slide-next
+.slide-prev
+
+i.fa 
+	font-size: 57px
+	@media only screen and (min-width: 946px)
+		display: none

@@ -1,0 +1,128 @@
+footer
+	max-width: 100%
+	background: linear-gradient(to right, #efe90f 50%, transparent 0%)
+	background-color: #212122
+	@media only screen and (max-width: 1200px)
+		padding: 0 15px
+	@media only screen and (max-width: 946px)
+		padding: 0
+.footer-container
+	max-width: 1140px
+	display: flex
+	flex-direction: row
+	margin: 0 auto
+	min-height: 382px
+	@media only screen and (max-width: 700px)
+		min-height: 10px
+
+.footer-contacts
+	padding-bottom: 24px
+	border-bottom: 1px solid #484848
+	margin-bottom: 24px
+	ul
+		width: 235px
+		text-align: left
+		margin-bottom: 12px
+	li
+		padding-bottom: 11px
+	img
+		display: inline-block
+
+.footer-caption
+	margin-bottom: 35px
+
+.copyright
+	padding-left: 2px
+
+.left-block
+	padding-top: 33px
+	padding-left: 1px
+	background-color: #efe90f
+	padding-right: 28px
+	@media only screen and (max-width: 946px)
+		display: none
+
+.right-block
+	display: grid
+	grid-template-columns: 0.93fr 1.03fr 1fr 0.5fr
+	grid-template-rows:  repeat(6, 1fr)
+	width: 77%
+	padding-top: 32px
+	background: #212122
+	padding-left: 21px
+	margin-right: -2px
+	@media only screen and (max-width: 946px)
+		margin-left: 0
+		width: 100%
+		margin-left: 0
+		padding: 20px
+	@media only screen and (max-width: 700px)
+		display: block
+.ul-caption
+	border-bottom: 3px solid #999999
+	padding-bottom: 4px
+	margin-bottom: 20px
+	padding-bottom: 7px
+	width: 97px
+
+.style
+	grid-area: 1 / 1 / span 3
+.form
+	grid-area: 1 / 2 / span 4
+.material
+	grid-area: 1 / 3 / span 4
+.color
+	grid-area: 1 / 4 / span 6
+.shops
+	grid-area: 4 / 1 / span 2 / span 3
+	padding-left: 8px
+	padding-top: 33px
+	.ul-caption
+		width: 100%
+		margin-bottom: 3px
+		border: none
+	li 	
+		margin-right: 10px
+		display: inline-block
+		margin-right: 25px
+.menu
+	padding-top: 7px
+	padding-right: 2px
+	@media only screen and (max-width: 700px)
+		padding-top: 5px
+	li
+		display: inline-block
+		@media only screen and (max-width: 700px)
+			display: block
+			padding: 2px 0
+		&:nth-child(2)
+			margin-left: -2px			
+			@media only screen and (max-width: 700px)
+				margin-left: 0
+
+				
+
+	grid-area: 6 / 1 / span 1 / span 5
+	display: grid
+	align-content: center
+	padding-top: 3px
+	border-top: 1px solid #999999
+	margin-top: 2px
+	letter-spacing: -0.6px
+	ul
+		min-height: 100%
+		display: flex
+		justify-content: space-between
+		padding-left: 8px
+		@media only screen and (max-width: 700px)
+			display: block
+
+.style, .form, .material, .color, .shops
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	padding-left: 9px
+	li
+		margin-bottom: 10px
+	@media only screen and (max-width: 700px)
+		display: none

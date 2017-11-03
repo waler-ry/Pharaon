@@ -1,0 +1,39 @@
+// service-cards-part
+
+.service-card-container
+	max-width: 1170px
+	display: flex
+	margin: 0 auto
+	align-items: center
+	padding-top: 55px
+
+
+.service-card-block
+	display: inherit
+	justify-content: space-between
+	width: 100%	
+	flex-wrap: wrap
+	@media only screen and (max-width: 800px)
+		width: 75%
+		margin: 0 auto
+
+.card
+	text-align: center
+	width: 262px
+	margin: 0 auto
+	&-text-block
+		width: 158px
+		margin: 0 auto
+	&:nth-child(2)
+		.card-text-block
+			width: 237px
+	&:nth-child(4)
+		width: 256px
+		.card-text-block
+			width: 175px
+	img
+		padding-bottom: 27px		
+	h4
+		line-height: 1
+		padding-bottom: 11px
+
